@@ -1,0 +1,119 @@
+$Green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 20%);
+$Dark_Grey: hsl(0, 0%, 12%);
+$Off_Black: hsl(0, 0%, 8%);
+
+$font_size: 14px;
+$font_size_normal: 0.875rem;
+$font_size_bold: 1.5rem;
+$font_weight: 400;
+$font_weight_bold:600;
+$font_weight_bolder:700;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: $Off_Black;
+  line-height: 1.5rem;
+  font-size: $font_size;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: $White;
+}
+h1{
+    font-size: $font_size_bold;
+    font-weight: $font_weight;
+}
+p{
+    font-size: $font_size_normal;
+    font-weight: $font_weight;
+}
+.container {
+  background-color: $Dark_Grey;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+  gap: 16px;
+}
+.image_container {
+  margin: 0 auto;
+  width: 100%;
+}
+.card {
+  width: 20.5rem;
+  background-color: $Dark_Grey;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6875rem;
+  text-align: center;
+}
+.social-description{
+    display: flex;
+    flex-direction: column;
+    row-gap:1.5rem;
+    align-items: center;
+}
+img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+.profile-thumbnail{
+    border-radius: 100%;
+    width: 88px;
+    height: 88px;
+}
+.name_location{
+   display: flex;
+   flex-direction: column;
+   gap:0.875rem;
+}
+.social_link{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+    a{
+        background-color: $Grey;
+        color: $White;
+        border-radius: 10px;
+        padding: 0.875rem;
+        font-size: $font_size_normal;
+        font-weight: $font_weight_bold;
+        text-decoration: none;
+        
+        &:hover,
+        &:focus{
+            background-color: $Green;
+            color: $Off_Black;
+        }
+    }
+   
+}
+.location{
+    font-size: $font_size_normal;
+    font-weight: $font_weight_bold;
+    color: $Green;
+}
+
+@media screen and(min-width: 768px) {
+    .card{
+        width: 24.0625rem;
+        padding: 2.5rem;
+    }
+}
+
